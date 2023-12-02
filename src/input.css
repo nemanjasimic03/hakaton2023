@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+form{
+    background-color: black;
+    padding: 60px 30px;
+    border-radius: 40px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.309);
+    z-index: 99;
+}
+input{
+    padding: 6px 10px;
+    width: 400px;
+
+}
+
+.pocetna{
+    background-image: url(/slike/pozdina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pocetna h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pocetna img{
+    height: 600px;
+    width: auto;
+}
+
+.pocetna .prva{
+    z-index: 0;
+}
+
+.pocetna .druga{
+    z-index: 1;
+    right: 130px;
+    position: relative;
+}
+
+.pocetna .treca{
+    z-index: 1;
+    right: 220px;
+    position: relative;
+}
+.prva, .druga, .treca{
+    position: relative;
+}
+.prva h2{
+    position: relative;
+    right: 30px;
+}
+.treca h2{
+    position: relative;
+    right: 20px;
+}
+.cetvrta h2{
+    position: relative;
+    right: 0px;
+}
+
+.pocetna h1{
+    position: absolute;
+    bottom: 30px;
+    font-size: 50px;
+    color: white;
+    left: 100px;
+    font-weight: bold;
+}
