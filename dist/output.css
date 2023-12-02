@@ -558,6 +558,10 @@ video {
   height: 100vh;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-\[600px\] {
   width: 600px;
 }
@@ -594,10 +598,6 @@ video {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -610,6 +610,10 @@ video {
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
@@ -635,6 +639,16 @@ video {
 .px-52 {
   padding-left: 13rem;
   padding-right: 13rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -666,6 +680,7 @@ video {
 
 body{
   font-family: 'Manrope', sans-serif;
+  overflow: hidden;
 }
 
 form{
@@ -688,6 +703,7 @@ input{
   background-image: url(/slike/pozdina.png);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: none;
 }
 
 .pocetna h2{
@@ -700,6 +716,12 @@ input{
 .pocetna img{
   height: 600px;
   width: auto;
+  cursor: pointer;
+}
+
+.pocetna img:hover{
+  transform: scale(105%);
+  transition: 0.2s;
 }
 
 .pocetna .prva{
@@ -739,9 +761,28 @@ input{
 
 .pocetna h1{
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   font-size: 50px;
   color: white;
   left: 100px;
   font-weight: bold;
+}
+
+.prva h1{
+  left:140px;
+}
+
+.materijali{
+  background-image: url(/slike/pozadina2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: none;
+}
+
+.bg-transparent{
+  background-color: rgba(0, 0, 0, 0.502);
+}
+
+.materijali img{
+  width: 170px;
 }
