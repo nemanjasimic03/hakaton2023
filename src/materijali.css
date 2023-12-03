@@ -1,0 +1,50 @@
+body{
+    background-image: url("/slike/pozdina.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slike img{
+    height: 200px;
+    width: auto;
+}
+img{
+    
+    margin-left: 300px;
+}
+
+.slike{ 
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-inline: 550px;
+}
+
+.slike img{
+    margin: 0 0 0 0;
+    /* align-items: center; */
+    justify-self: center;
+}
+
+.slike img:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+    cursor: pointer;
+}

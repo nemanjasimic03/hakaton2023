@@ -13,10 +13,10 @@
 
 body{
     font-family: 'Manrope', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-form{
+.formaa{
     background-color: black;
     padding: 60px 30px;
     border-radius: 40px;
@@ -29,7 +29,6 @@ nav{
 input{
     padding: 6px 10px;
     width: 400px;
-
 }
 
 .pocetna{
@@ -95,12 +94,24 @@ input{
 .prva h1{
     left:140px;
 }
-
+.todo{
+    background-color: rgba(0, 128, 0, 0.606);
+    margin-top: 50px;
+}
 .materijali{
     background-image: url(/slike/pozadina2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: none;
+
+    padding-top: 180px;
+    height: 1700px !important;
+    padding-bottom: 500px;
+}
+
+.pozadina{
+    background-image: url(/slike/pozadina2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-transparent{
@@ -109,4 +120,105 @@ input{
 
 .materijali img{
     width: 170px;
+}
+
+.forma,.ciljevi{
+    background-image: url(/slike/pozdina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: none;
+}
+.formaa{
+    background-color: rgba(0, 0, 0, 0.566);
+}
+input{
+    background-color: transparent;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 9px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.878);
+}
+input:checked ~ h2{
+    text-decoration: line-through;
+}
+.ispod-momka{
+    display: flex;
+    justify-items: center;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-size: 30px;
+    padding: 45px;
+    color: #fff;
+}
+.godina h1{
+    width: 155px;
+    height: 155px;
+   border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Change the text color as needed */
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.video{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-size: contain;
+}
+
+.godina h1:hover{
+    background-color: rgba(0, 0, 0, 0.502);
+}
+.godina h2{
+    text-align: center;
+}
+.ispod-prva{
+    display: none;
+background-color: rgba(0, 0, 0, 0.502);
+color: white;
+padding: 20px 70px;
+text-align: center;
+font-weight: bolder;
+font-size: 24px;
+margin-bottom: 30px;
+
+}
+.ispod-druga{
+    display: none;
+background-color: rgba(0, 0, 0, 0.502);
+color: white;
+padding: 20px 70px;
+text-align: center;
+font-weight: bolder;
+font-size: 24px;
+margin-bottom: 30px;
+
+}
+.ispod-treca{
+    display: none;
+background-color: rgba(0, 0, 0, 0.502);
+color: white;
+padding: 20px 70px;
+text-align: center;
+font-weight: bolder;
+font-size: 24px;
+margin-bottom: 30px;
+
+}
+.ispod-cetvrta{
+    display: none;
+background-color: rgba(0, 0, 0, 0.502);
+color: white;
+padding: 20px 70px;
+text-align: center;
+font-weight: bolder;
+font-size: 24px;
+margin-bottom: 30px;
+
 }
